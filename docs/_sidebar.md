@@ -7,7 +7,7 @@
 - 核心概念
 
     - [The Host: App/Page]()
-    - [Mixin]()
+    - [Mixin](concept/mixin.md)
     - [Plugin]()
 
 - BeautyWe Framework
