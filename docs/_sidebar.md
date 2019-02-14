@@ -16,7 +16,7 @@
     - [开始](contents/beautywe-framework/start.md)
     - [项目结构说明 <small>[编写中...]</small>]()
     - [构建 <small>[编写中...]</small>]()
-    - [全局窗口](contents/beautywe-framework/global-view.md)
+    - [全局窗口 <small>[编写中...]</small>](contents/beautywe-framework/global-view.md)
     - [配置 <small>[编写中...]</small>]()
 
 - CLI
