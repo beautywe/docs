@@ -31,10 +31,6 @@ import { BeautyWe } from './libs/npm/index';
 
 // 构建 BtApp 实例
 const myApp = new BeautyWe.BtApp({
-  name: 'my-wxapp',
-  version: '0.0.1',
-  appid: 'xxx',
-}, {
   onLaunch() {
     console.log('on app run');
   }
