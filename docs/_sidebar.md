@@ -7,10 +7,7 @@
 - 核心概念
 
     - [宿主：App/Page/Component](contents/concept/the-host.md)
-    - [插件 <small>[编写中...]</small>]()
-        - [使用]()
-        - [原理]()
-        - [编写]()
+    - [插件 <small>[编写中...]</small>](contents/concept/plugin.md)
 
 - BeautyWe Framework
 
@@ -28,9 +25,10 @@
 
 - API
 
-    - [BeautyWe.BtApp <small>[编写中...]</small>]()
-    - [BeautyWe.BtPage <small>[编写中...]</small>]()
-    - [BeautyWe.BtPlugin <small>[编写中...]</small>]()
+    - [Class Host <small>[编写中...]</small>]()
+    - [Class BtApp <small>[编写中...]</small>]()
+    - [Class BtPage <small>[编写中...]</small>]()
+    - [Class BtPlugin <small>[编写中...]</small>]()
 
 - 官方插件
 

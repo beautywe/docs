@@ -50,8 +50,8 @@ import event from '@youzan/beautywe-plugin-event';
 myApp.use(event());
 
 // now you can listen and trigger an event
-myApp.on('hello', (msg) => console.log(msg));
-myApp.trigger('hello', 'I am jc');
+myApp.event.on('hello', (msg) => console.log(msg));
+myApp.event.trigger('hello', 'I am jc');
 ```
 
 更多的官方插件看：《官方插件》
