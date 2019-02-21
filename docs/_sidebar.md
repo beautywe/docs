@@ -4,10 +4,13 @@
 
     - [快速开始](contents/quick-start.md)
 
-- 核心概念
+- 核心
 
-    - [宿主：App/Page/Component](contents/concept/the-host.md)
-    - [插件 <small>[编写中...]</small>](contents/concept/plugin.md)
+    - [宿主](contents/core/the-host.md)
+    - 插件
+        - [使用](contents/core/plugin/use.md)
+        - [编写](contents/core/plugin/write.md)
+        - [原理](contents/core/plugin/how-to-work.md)
 
 - BeautyWe Framework
 
