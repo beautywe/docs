@@ -14,12 +14,9 @@
 
 - BeautyWe Framework
 
-    - [介绍 <small>[编写中...]</small>]()
-    - [开始](contents/beautywe-framework/start.md)
-    - [项目结构说明 <small>[编写中...]</small>]()
-    - [构建 <small>[编写中...]</small>]()
-    - [全局窗口 <small>[编写中...]</small>](contents/beautywe-framework/global-view.md)
-    - [配置 <small>[编写中...]</small>]()
+    - [介绍](contents/framework/introduce.md)
+    - [开始](contents/framework/start.md)
+    - [项目结构](contents/framework/structure.md)
 
 - CLI
 
@@ -33,7 +30,7 @@
     - [Class BtPage <small>[编写中...]</small>]()
     - [Class BtPlugin <small>[编写中...]</small>]()
 
-- 官方插件
+- 插件
 
     - [beautywe-plugin-storage <small>[编写中...]</small>]()
     - [beautywe-plugin-event <small>[编写中...]</small>]()
