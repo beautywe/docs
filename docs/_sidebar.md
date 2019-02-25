@@ -18,10 +18,17 @@
     - [开始](contents/framework/start.md)
     - [项目结构](contents/framework/structure.md)
 
-- CLI
+- 推荐插件
 
-    - [beautywe-cli new <small>[编写中...]</small>]()
-    - [beautywe-cli run <small>[编写中...]</small>]()
+    - [增强存储：storage](http://gitlab.qima-inc.com/huangpeijie/beautywe-plugin-storage/blob/master/README.md)
+    - [事件发布/订阅：event]()
+    - [缓存策略：cache]()
+    - [状态机：status]()
+    - [分页：listpage]()
+    - [防抖动：debounce]()
+    - [节流：throttle]()
+
+- [CLI](contents/cli.md)
 
 - API
 
@@ -29,12 +36,4 @@
     - [Class BtApp <small>[编写中...]</small>]()
     - [Class BtPage <small>[编写中...]</small>]()
     - [Class BtPlugin <small>[编写中...]</small>]()
-
-- 插件
-
-    - [beautywe-plugin-storage <small>[编写中...]</small>]()
-    - [beautywe-plugin-event <small>[编写中...]</small>]()
-    - [beautywe-plugin-cache <small>[编写中...]</small>]()
-    - [beautywe-plugin-status <small>[编写中...]</small>]()
-    - [beautywe-plugin-listpage <small>[编写中...]</small>]()
 
