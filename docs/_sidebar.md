@@ -22,11 +22,12 @@
 
     - [增强存储：storage](http://npm.qima-inc.com/package/@youzan/beautywe-plugin-storage)
     - [事件发布/订阅：event](http://npm.qima-inc.com/package/@youzan/beautywe-plugin-event)
-    - [缓存策略：cache]()
-    - [状态机：status]()
-    - [分页：listpage]()
-    - [防抖动：debounce]()
-    - [节流：throttle]()
+    - [状态机：status](http://npm.qima-inc.com/package/@youzan/beautywe-plugin-status)
+    - [分页：listpage <small>编写中...</small>]()
+    - [缓存策略：cache <small>开发中...</small>]()
+    - [防抖动：debounce <small>开发中...</small>]()
+    - [节流：throttle <small>开发中...</small>]()
+    - [日志：logger <small>开发中...</small>]()
 
 - [CLI](contents/cli.md)
 
