@@ -20,8 +20,8 @@
 
 - 推荐插件
 
-    - [增强存储：storage](http://gitlab.qima-inc.com/huangpeijie/beautywe-plugin-storage/blob/master/README.md)
-    - [事件发布/订阅：event]()
+    - [增强存储：storage](http://npm.qima-inc.com/package/@youzan/beautywe-plugin-storage)
+    - [事件发布/订阅：event](http://npm.qima-inc.com/package/@youzan/beautywe-plugin-event)
     - [缓存策略：cache]()
     - [状态机：status]()
     - [分页：listpage]()
