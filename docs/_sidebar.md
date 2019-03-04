@@ -24,10 +24,13 @@
     - [事件发布/订阅：event](http://npm.qima-inc.com/package/@youzan/beautywe-plugin-event)
     - [状态机：status](http://npm.qima-inc.com/package/@youzan/beautywe-plugin-status)
     - [数据列表：listpage](http://npm.qima-inc.com/package/@youzan/beautywe-plugin-listpage)
-    - [缓存策略：cache <small>开发中...</small>]()
+    - [缓存策略：cache](http://npm.qima-inc.com/package/@youzan/beautywe-plugin-cache)
     - [防抖动：debounce <small>开发中...</small>]()
     - [节流：throttle <small>开发中...</small>]()
     - [日志：logger <small>开发中...</small>]()
+    - [Redux <small>开发中...</small>]()
+    - [setData] <small>开发中...</small>]()
+    - [错误 error] <small>开发中...</small>]()
 
 - [CLI](contents/cli.md)
 
