@@ -25,10 +25,6 @@ App(page);
 const theHost = new BeautyWe.BtPage({...});
 Page(page);
 
-// in xxx/component.js
-const theHost = new BeautyWe.BtComponent({...});
-Component(component);
-
 // use event plugin
 app.use(event());
 
