@@ -1,5 +1,5 @@
 
-- 介绍 [编写中...]
+- [介绍](README.md)
 - 上手
 
     - [快速开始](contents/quick-start.md)
@@ -25,14 +25,14 @@
     - [状态机：status](http://npm.qima-inc.com/package/@youzan/beautywe-plugin-status)
     - [数据列表：listpage](http://npm.qima-inc.com/package/@youzan/beautywe-plugin-listpage)
     - [缓存策略：cache](http://npm.qima-inc.com/package/@youzan/beautywe-plugin-cache)
+    - [日志：logger <small>开发中...</small>]()
+    - [错误 error <small>开发中...</small>]()
+    - [Redux <small>开发中...</small>]()
+    - [setData <small>开发中...</small>]()
     - [防抖动：debounce <small>开发中...</small>]()
     - [节流：throttle <small>开发中...</small>]()
-    - [日志：logger <small>开发中...</small>]()
-    - [Redux <small>开发中...</small>]()
-    - [setData] <small>开发中...</small>]()
-    - [错误 error] <small>开发中...</small>]()
 
-- [CLI](contents/cli.md)
+- [Command Line Interface](contents/cli.md)
 
 - API
 
