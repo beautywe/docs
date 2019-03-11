@@ -18,6 +18,9 @@
     - [开始](contents/framework/start.md)
     - [项目结构](contents/framework/structure.md)
 
+- BeautyWe Api
+    - [介绍](http://npm.qima-inc.com/package/@youzan/beautywe-api)
+    
 - 推荐插件
 
     - [增强存储：storage](http://npm.qima-inc.com/package/@youzan/beautywe-plugin-storage)
