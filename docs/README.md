@@ -13,6 +13,9 @@ BeautyWe 是一套开发范式，它由几部分组成：
 * **企业级框架** - `@youzan/beautywe-framework`    
     基于 `@youzan/beautywe`，集成基本的官方插件，以及提供开发规范、构建任务、配置、NPM 等解决方案。
 
+* **Http库** - `@youzan/beautywe-api`    
+    轻量强大的小程序api库，提供一套api调用的最佳实践。
+
 * **自动化工具** - `@youzan/beautywe-cli`    
     提供「新建应用」、「新建页面」、「新建插件」、「项目构建」等任务的命令行工具，能自动化的就不手动。
     
