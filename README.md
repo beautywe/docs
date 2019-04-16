@@ -1,2 +1,2 @@
-# beautywe-docs-site
-BeautyWe 的文档站点
+# BeautyWe-Docs
+BeautyWe Docs

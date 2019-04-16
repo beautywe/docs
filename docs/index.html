@@ -10,12 +10,17 @@
 </head>
 <body>
   <div id="app"></div>
+
+  <script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
   <script>
     window.$docsify = {
       name: 'BeautyWe',
       repo: 'https://github.com/beautywe',
       loadSidebar: true,
       subMaxLevel: 4,
+      plugins: [
+        EditOnGithubPlugin.create('https://github.com/beautywe/beautywe-docs/blob/master/docs/'),
+      ],
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>

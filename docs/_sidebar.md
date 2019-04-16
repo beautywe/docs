@@ -37,10 +37,4 @@
 
 - [Command Line Interface](contents/cli.md)
 
-- API
-
-    - [Class Host <small>[编写中...]</small>]()
-    - [Class BtApp <small>[编写中...]</small>]()
-    - [Class BtPage <small>[编写中...]</small>]()
-    - [Class BtPlugin <small>[编写中...]</small>]()
-
+- [CHANGELOG](contents/changelog.md)

@@ -1,7 +1,7 @@
 # BeautyWe
 
-![version](https://badgen.net/badge/cnpm/2.1.2/red)
-![downloads](https://badgen.net/badge/downloads/3)
+![version](https://badgen.net/badge/cnpm/2.2.0/red)
+![downloads](https://badgen.net/badge/downloads/13)
 
 > 一套轻量的微信小程序开发范式
 
