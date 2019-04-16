@@ -1,14 +1,14 @@
 
 ## Step1: 下载
 ```
-ynpm i @youzan/beautywe
+ynpm i @beautywe/beautywe
 ```
 
 ## Step2: 引入
 
 ### Options 1: 拷贝 beautywe.min.js 到项目中
 
-你可以把 `node_modules/@youzan/beautywe/beautywe.min.js` 文件拷贝到你的项目中，然后像这样来使用 BeautyWe：
+你可以把 `node_modules/@beautywe/beautywe/beautywe.min.js` 文件拷贝到你的项目中，然后像这样来使用 BeautyWe：
 
 ```javascript
 import BeautyWe from './beautywe.min.js';
@@ -44,7 +44,7 @@ App(myApp);
 ## Step4: 使用插件能力
 
 ```javascript
-import event from '@youzan/beautywe-plugin-event';
+import event from '@beautywe/beautywe-plugin-event';
 
 // using event plugin
 myApp.use(event());

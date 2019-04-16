@@ -18,8 +18,10 @@
     - [开始](contents/framework/start.md)
     - [项目结构](contents/framework/structure.md)
 
-- BeautyWe Api
+- BeautyWe API
     - [介绍](http://npm.qima-inc.com/package/@youzan/beautywe-api)
+
+- [BeautyWe CLI](contents/cli.md)
     
 - 推荐插件
 
@@ -28,13 +30,5 @@
     - [状态机：status](http://npm.qima-inc.com/package/@youzan/beautywe-plugin-status)
     - [数据列表：listpage](http://npm.qima-inc.com/package/@youzan/beautywe-plugin-listpage)
     - [缓存策略：cache](http://npm.qima-inc.com/package/@youzan/beautywe-plugin-cache)
-    - [日志：logger <small>开发中...</small>]()
-    - [错误 error <small>开发中...</small>]()
-    - [Redux <small>开发中...</small>]()
-    - [setData <small>开发中...</small>]()
-    - [防抖动：debounce <small>开发中...</small>]()
-    - [节流：throttle <small>开发中...</small>]()
 
-- [Command Line Interface](contents/cli.md)
-
-- [CHANGELOG](contents/changelog.md)
+- [Changelog](contents/changelog.md)

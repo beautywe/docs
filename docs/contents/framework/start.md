@@ -1,6 +1,6 @@
 ## Download
 ```
-ynpm i @youzan/beautywe-cli -g
+ynpm i @beautywe/beautywe-cli -g
 ```
 
 ## New Project

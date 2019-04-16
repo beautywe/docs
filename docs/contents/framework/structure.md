@@ -243,7 +243,7 @@ npm task，使得你能够使用 node_modules 的库。
 
 src/npm/index.js
 ```javascript
-import beautywe from '@youzan/beautywe';
+import beautywe from '@beautywe/beautywe';
 
 module.exports = {
     beautywe,

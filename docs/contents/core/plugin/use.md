@@ -1,11 +1,11 @@
 # 使用
 
-[Class BtApp]()、[Class BtPage]() 都继承自 [Class Host]() 。    
+`Class BtApp`、`Class BtPage` 都继承自 `Class Host` 。    
 而 **Host.prototype.use** 方法实现了插件的注册。
 
 ```javascript
-import event from '@youzan/beautywe-plugin-event';
-import BeautyWe from '@youzan/beautywe';
+import event from '@beautywe/beautywe-plugin-event';
+import BeautyWe from '@beautywe/beautywe';
 
 // in app.js
 const theHost = new BeautyWe.BtApp();

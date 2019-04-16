@@ -7,6 +7,8 @@
 
 ## [2.2.0] - 2019-04-03
 
+--------
+
 ### New versions of BeautyWe family
 
 - beautywe@2.2.0
