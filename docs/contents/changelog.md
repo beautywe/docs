@@ -11,6 +11,8 @@
 
 ### New versions of BeautyWe family
 
+以下相关库，都需要更新到最新版本：
+
 - beautywe@2.2.0
 - beautywe-framework@0.1.0
 - beautywe-cli@0.0.11
