@@ -1,5 +1,14 @@
 # 编写
 
+BeautyWe 会对 [宿主](contents/core/the-host.md)(App/Page) 进行「可插件化」处理，经过这一步骤，能把宿主多种能力开放给插件。
+
+插件的能力可以这样分类：
+
+1. 扩展宿主数据：Data，对应 `plugin.data`
+2. 扩展宿主原生钩子：Native Hook，对应 `plugin.nativeHook`
+3. 扩展宿主事件监听钩子：Handler Hook，对应 `plugin.handler`
+4. 提供自定义的 API，供宿主调用，对应 `plugin.custeomMethod`
+
 所有 BeautyWe 插件都是一个 object，你可以这样创建一个插件：
 
 ```javascript
