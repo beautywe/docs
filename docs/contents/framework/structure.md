@@ -1,5 +1,13 @@
 # App Structure
 
+## .templates
+
+存放用于 `beautywe new ` 命令的自定义模板库，包含：
+
+* .templates/component/
+* .templates/page/
+* .templates/plugin/
+
 ## /dist
 
 通过构建任务，从 `/src` 构建代码到 `/dist`。    

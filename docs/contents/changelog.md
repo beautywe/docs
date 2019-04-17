@@ -22,9 +22,10 @@
 
 ### Added
 - 新增插件生命周期钩子：`beforeAttach`, `attached`, `initialize`，[参考：插件的生命周期](/contents/core/plugin/how-to-work.md#插件的生命周期)
-- `beautywe-cli` 的「快速创建功能」新增 `Component` 实现
-- `beautywe-cli` 的「快速创建功能」支持自定义模板，并且支持独立于 `beautywe-framework` 使用
-- `beautywe-framework` 增加「快速创建功能」自定义模板的实现
+- `beautywe-cli`  `new` 系列命令，支持自定义模板
+- `beautywe-cli` 新增 `new component` 命令，[参考：new component](/contents/cli.md#new-component)
+- `beautywe-cli` 新增 `.beautywerc` 文件，支持配置自定义模板，[参考：.beautywerc](/contents/cli.md#beautywerc)
+- `beautywe-framework` 增加「快速创建功能」自定义模板的实现，[参考：.templates](/contents/framework/structure.md#templates)
 
 ### Changed
 - 插件不再是 `BtPlugin` 的实例，而只是一个直接定义的 `Object` 的实例，[参考：插件编写](/contents/core/plugin/write.md)

@@ -53,6 +53,14 @@ $ beautywe page <name|path>
 $ beautywe new plugin <name> [dir]
 ```
 
+### new component
+
+```
+$ beautywe new component <name|path>
+```
+
+**<name|path> 逻辑**：跟 `new page` 一致
+
 #### 说明
 
 快速创建一个插件文件
@@ -176,3 +184,45 @@ run 命令底层是调用了 gulp 任务。
 
 `beautywe run dev` = `gulp dev`
 
+## .beautywerc
+
+```json
+{
+    // 给 beautywe new 命令，指定自定义模板
+    "templates": {
+
+        // new component
+        "component": {
+            // 模板文件虽在的目录
+            "source": ".templates/component",
+
+            // 新文件输出的默认目录
+            "defaultOutput": "src/components"
+        },
+
+        // new page
+        "page": {
+            // 模板文件虽在的目录
+            "source": ".templates/page",
+
+            // 新文件输出的默认目录
+            "defaultOutput": "src/pages"
+        },
+
+        // new plugin
+        "plugin": {
+            // 模板文件虽在的目录
+            "source": ".templates/plugin",
+
+            // 新文件输出的默认目录
+            "defaultOutput": "src/libs/plugins"
+        }
+    },
+
+    // 项目构建输出的目标目录
+    "distDir": "dist",
+
+    // 项目源码目录
+    "appDir": "src"
+}
+```
