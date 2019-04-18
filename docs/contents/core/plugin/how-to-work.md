@@ -11,7 +11,7 @@ BeautyWe 会对宿主进行「可插件化」处理，经过这一步骤，才�
 为了避免啰嗦，后续只用 `App` 来说明。
 
 当执行代码 `const app = new BtApp(userApp)` 的时候，「可插件化」就会开始工作，最后输出的 `app`，是已经过可插件化的了。
-如果你尝试打印 `app.onLaunch` 和 `userApp.onLaunch`，你会发现是完全一样的函数。
+如果你尝试打印 `app.onLaunch` 和 `userApp.onLaunch`，你会发现是不一样的函数。
 
 为了方便理解，对这过程中的抽象，我们约定一下理解：
 1. **Native App**: `App(app)` 生成的实例，是微信小程序原生的 App 实例
