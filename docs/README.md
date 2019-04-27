@@ -1,4 +1,4 @@
-![version](https://img.yzcdn.cn/public_files/2019/04/27/40a3090b9dbd62233fbda998167d17ff.png?imageView2/2/h/200)
+![version](https://img.yzcdn.cn/public_files/2019/04/27/49f46c53afd62f9cebcbcf13b091acbb.png?imageView2/2/h/200)
 
 ![version](https://badgen.net/badge/cnpm/2.2.0/red)
 ![downloads](https://badgen.net/badge/downloads/13)
