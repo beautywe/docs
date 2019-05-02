@@ -1,35 +1,5 @@
-<p id="begin" align="center">
-  <a href="http://beautywejs.com">
-      <img width="600" src="./images/logo-V4.png">
-  </a>
-</p>
-
-<p align="center">
-  Write beautiful code for wechat mini app by the beautiful we 👨‍💻‍!
-</p>
-
-<p align="center">
-  <a href="https://www.npmjs.com/package/@beautywe/core">
-    <img alt="NPM Size" src="https://img.shields.io/bundlephobia/minzip/@beautywe/core.svg">
-  </a>
-  <a href="https://www.npmjs.com/package/@beautywe/core">
-    <img alt="NPM Version" src="https://img.shields.io/npm/v/@beautywe/core.svg">
-  </a>
-  <a href="https://www.npmjs.com/package/@beautywe/core">
-    <img alt="NPM Version" src="https://img.shields.io/npm/dm/@beautywe/core.svg">
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://circleci.com/gh/beautywe/beautywe">
-    <img alt="CircleCI" src="https://img.shields.io/circleci/project/github/beautywe/beautywe/master.svg">
-  </a>
-  <a href='https://coveralls.io/github/beautywe/beautywe?branch=master'>
-    <img src='https://coveralls.io/repos/github/beautywe/beautywe/badge.svg?branch=master' alt='Coverage Status' />
-  </a>
-</p>
-
-## Intro
+## Introduction
+----
 
 BeautyWe 是一套微信小程序的开发范式，它由几部分组成：
 
@@ -46,6 +16,7 @@ BeautyWe 是一套微信小程序的开发范式，它由几部分组成：
     提供「新建应用」、「新建页面」、「新建插件」、「项目构建」等任务的命令行工具，解放双手。
 
 ## Usage Example
+
 
 ```
 npm i @beautywe/core @beautywe/plugin-event
@@ -73,3 +44,19 @@ const app = getApp();
 myApp.event.on('hello', (msg) => console.log(msg));
 myApp.event.trigger('hello', 'I am jc');
 ```
+
+# Contact & Support
+
+
+* 欢迎通过邮箱来跟我联系: huangjerryc@gmail.com
+* 欢迎通过 [GitHub issue](https://github.com/beautywe/beautywe/issues) 提交 BUG、以及其他问题
+* 欢迎给该项目点个赞 ⭐️ [star on GitHub](https://github.com/beautywe/beautywe) !
+
+
+
+# License
+
+
+This project is licensed under the [MIT license](https://raw.githubusercontent.com/beautywe/beautywe/master/LICENSE).
+
+Copyright (c) JerryC Huang (huangjerryc@gmail.com)
