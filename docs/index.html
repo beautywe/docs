@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>BeautyWe.js | 简单、组合、美丽的微信小程序范式</title>
+  <title>BeautyWe.js | 简单、组合、美丽</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport"
@@ -14,7 +14,6 @@
 
 <body>
   <div id="app"></div>
-  <!-- <script src="//unpkg.com/docsify-edit-on-github/index.js"></script> -->
   <script>
     window.$docsify = {
       coverpage: true,
@@ -23,18 +22,36 @@
       repo: 'https://github.com/beautywe/beautywe',
       loadSidebar: true,
       subMaxLevel: 2,
-      plugins: [
-        // EditOnGithubPlugin.create('https://github.com/beautywe/beautywe-docs/blob/master/docs/'),
-      ],
       pagination: {
         previousText: '上一章节',
         nextText: '下一章节',
         crossChapter: true
-      },
+      }
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
   <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139478920-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-139478920-1');
+  </script>
+
+  <!-- Baidu Analytics -->
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?5c9f0408186a5b903fc531ee6671683c";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 </body>
 
 </html>
