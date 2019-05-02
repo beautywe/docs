@@ -3,7 +3,7 @@
 
     - [快速开始](contents/quick-start.md)
 
-- 核心
+- 核心概念
 
     - [宿主](contents/core/the-host.md)
     - 插件
@@ -11,23 +11,21 @@
         - [编写](contents/core/plugin/write.md)
         - [原理](contents/core/plugin/how-to-work.md)
 
-- BeautyWe Framework
+- 配套设施
 
-    - [介绍](contents/framework/introduce.md)
-    - [开始](contents/framework/start.md)
-    - [项目结构](contents/framework/structure.md)
+    - [**BeautyWe CLI**](contents/cli.md)
 
-- BeautyWe API
-    - [介绍](http://npm.qima-inc.com/package/@youzan/beautywe-api)
+    - BeautyWe Framework
 
-- [BeautyWe CLI](contents/cli.md)
-    
-- 推荐插件
+        - [上手](contents/framework/introduce.md)
+        - [项目结构](contents/framework/structure.md)
+        
+    - 推荐插件
 
-    - [增强存储：storage](http://npm.qima-inc.com/package/@youzan/beautywe-plugin-storage)
-    - [事件发布/订阅：event](http://npm.qima-inc.com/package/@youzan/beautywe-plugin-event)
-    - [状态机：status](http://npm.qima-inc.com/package/@youzan/beautywe-plugin-status)
-    - [数据列表：listpage](http://npm.qima-inc.com/package/@youzan/beautywe-plugin-listpage)
-    - [缓存策略：cache](http://npm.qima-inc.com/package/@youzan/beautywe-plugin-cache)
+        - [增强存储：storage](https://github.com/beautywe/plugin-storage)
+        - [事件发布/订阅：event](https://github.com/beautywe/plugin-event)
+        - [状态机：status](https://github.com/beautywe/plugin-status)
+        - [数据列表：listpage](https://github.com/beautywe/plugin-listpage)
+        - [缓存策略：cache](https://github.com/beautywe/plugin-cache)
 
-- [Changelog](contents/changelog.md)
+- [**CHANGELOG**](contents/changelog.md)

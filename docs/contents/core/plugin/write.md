@@ -12,7 +12,6 @@ BeautyWe 会对 [宿主](contents/core/the-host.md)(App/Page) 进行「可插件
 所有 BeautyWe 插件都是一个 object，你可以这样创建一个插件：
 
 ```javascript
-import BeautyWe from '@beautywe/beautywe';
 const myPlugin = {
     // 插件名
     name: 'myPlugin',
@@ -63,7 +62,7 @@ const myPlugin = {
 然后我们就可以使用上面创建的 `myPlugin` 了：
 
 ```javascript
-const page = new BtPage({
+const myPage = new BtPage({
     onLoad() {
         this.myPlugin.sayHello();
         // 输出：Hello, I am MyPlugin
@@ -73,9 +72,9 @@ const page = new BtPage({
     },
 });
 
-page.use(myPlugin);
+myPage.use(myPlugin);
 
-Page(app);
+Page(myPage);
 ```
 
 如果你使用 `beautywe-cli` 的话，我们提供了两种快速创建插件的方式：

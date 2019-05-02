@@ -15,7 +15,7 @@ beautywe-cli 提供了以下功能：
 ## 安装
 
 ```
-$ ynpm i @beautywe/beautywe-cli
+$ npm i @beautywe/cli
 ```
 
 ## new 命令
@@ -153,18 +153,18 @@ $ beautywe new plugin-module
 $ beautywe new plugin-module
 
 ? pluginName: my-plugin
-? moduleName: @beautywe/beautywe-plugin-my-plugin
+? moduleName: @beautywe/plugin-my-plugin
 ? desc: Just my plugin
 ? version: 0.0.1
 ? 这样可以么: 
 {
     "pluginName": "my-plugin",
-    "moduleName": "@beautywe/beautywe-plugin-my-plugin",
+    "moduleName": "@beautywe/plugin-my-plugin",
     "desc": "Just my plugin",
     "version": "0.0.1"
 }
  Yes
-[beautywe] › ▶  start     开始创建插件模块：@beautywe/beautywe-plugin-my-plugin
+[beautywe] › ▶  start     开始创建插件模块：@beautywe/plugin-my-plugin
 [beautywe] › ✔  success   生成文件：/beautywe-plugin-my-plugin/.babelrc
 [beautywe] › ✔  success   生成文件：/beautywe-plugin-my-plugin/.eslintignore
 [beautywe] › ✔  success   生成文件：/beautywe-plugin-my-plugin/.eslintrc

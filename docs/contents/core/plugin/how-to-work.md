@@ -59,22 +59,24 @@ BeautyWe 会对宿主进行「可插件化」处理，经过这一步骤，才�
 每个插件，在宿主的 data 中，都会有一个专有的命名空间：
 
 ```javascript
-import event from '@beautywe/beautywe-plugin-event';
-import BeautyWe from '@beautywe/beautywe';
+import event from '@beautywe/plugin-event';
+import beautywe from '@beautywe/core';
 
 // in app.js
-const theHost = new BeautyWe.BtApp();
-App(page);
+const myApp = new beautywe.BtApp();
+App(myApp);
 
 // in xxx/page.js
-const theHost = new BeautyWe.BtPage({...});
-Page(page);
+const myPage = new beautywe.BtPage({...});
+Page(myPage);
 
 // use event plugin
-app.use(event());
+myApp.use(event());
+myPage.use(event());
 
 // 提供给插件使用的命名空间
-theHost.data.event;
+myApp.data.event;
+myPage.data.event;
 ```
 
 该功能，主要用于满足某些插件功能需要与视图层进行交互的场景。
@@ -228,16 +230,16 @@ const pluginB = {
     }
 };
 
-const page = new BeautyWe.BtPage({
+const myPage = new beautywe.BtPage({
     onBtnClick(e) {
         // do your logic
     },
 });
 
 // 多个插件和宿主都能实现同一个事件函数，实现原理与 Native Hook 一致。
-page.use([pluginA, pluginB]);
+myPage.use([pluginA, pluginB]);
 
-Page(page);
+Page(myPage);
 ```
 
 ### 自定义方法 Custom Method
@@ -269,16 +271,16 @@ const myPlugin = {
     }
 };
 
-const page = new BeautyWe.BtPage({
+const myPage = new beautywe.BtPage({
     onLoad() {
         // 输出：Hello, I am myPlugin
         this.myPlugin.hello();
     }
 });
 
-page.use(myPlugin);
+myPage.use(myPlugin);
 
-Page(page);
+Page(myPage);
 ```
 
 custom method 混合的大概过程如下：

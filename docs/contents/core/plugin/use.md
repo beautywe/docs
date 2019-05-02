@@ -4,16 +4,16 @@
 而 **Host.prototype.use** 方法实现了插件的注册。
 
 ```javascript
-import event from '@beautywe/beautywe-plugin-event';
-import BeautyWe from '@beautywe/beautywe';
+import event from '@beautywe/plugin-event';
+import beautywe from '@beautywe/core';
 
 // in app.js
-const theHost = new BeautyWe.BtApp();
-App(page);
+const myApp = new beautywe.BtApp();
+App(myApp);
 
 // in xxx/page.js
-const theHost = new BeautyWe.BtPage({...});
-Page(page);
+const myPage = new beautywe.BtPage({...});
+Page(myPage);
 
 // use event plugin
 app.use(event());

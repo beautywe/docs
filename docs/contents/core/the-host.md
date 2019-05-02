@@ -14,7 +14,7 @@
 **BeautyWe** 提供了很多强有力的内容，前提都是基于构建三种宿主的实例来获取这些能力：
 
 ```javascript
-import { BtApp, BtPage } from '@beautywe/beautywe';
+import { BtApp, BtPage } from '@beautywe/core';
 
 // in app.js
 const app = new BtApp({...});
@@ -29,13 +29,11 @@ Page(page);
 **BeautyWe** 绝大部分的能力，被分割成一块块的插件，你可以通过 `theHost.use()` 来选择你喜欢的插件来使用：
 
 ```javascript
-import { BtApp } from '@beautywe/beautywe'; 
-import event from '@beautywe/beautywe-plugin-event';
+import { BtApp } from '@beautywe/core'; 
+import event from '@beautywe/plugin-event';
 
 const app = new BtApp({..});
 app.use(event());
 App(app);
 
 ```
-
-你可以从[《插件》](contents/core/plugin/use.md)来了解如何使用插件，运行原理，以及编写自己的插件。  
