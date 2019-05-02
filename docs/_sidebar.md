@@ -1,5 +1,4 @@
 
-- [介绍](README.md)
 - 上手
 
     - [快速开始](contents/quick-start.md)
