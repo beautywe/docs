@@ -15,7 +15,7 @@ beautywe-cli 提供了以下功能：
 ## 安装
 
 ```
-$ npm i @beautywe/cli
+$ npm i @beautywe/cli -g
 ```
 
 ## new 命令
