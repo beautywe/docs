@@ -7,10 +7,7 @@
 
 ## [BeautyWe Project #001] - xxxx.xx.xx
 
-### Developing
-
-See process of [BeautyWe Project #001](https://github.com/orgs/beautywe/projects/1)
-
+In process...and see process of [BeautyWe Project #001](https://github.com/orgs/beautywe/projects/1)
 
 ## [BeautyWe Prject #000] - 2019.05.01
 
