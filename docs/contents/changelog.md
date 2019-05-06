@@ -6,7 +6,7 @@
 并且该项目遵循 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 -----
-## [[BeautyWe Project #001] - xxxx.xx.xx](https://github.com/orgs/beautywe/projects/1)
+## [[BeautyWe Project #001]](https://github.com/orgs/beautywe/projects/1) - xxxx.xx.xx
 
 In process...    
 And see process of [BeautyWe Project #001](https://github.com/orgs/beautywe/projects/1)
