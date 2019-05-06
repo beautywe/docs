@@ -38,7 +38,7 @@ $ beautywe new app
 ### new page
 
 ```
-$ beautywe page <name|path>
+$ beautywe new page <name|path>
 ```
 
 快速创建页面，创建的页面包含以下四个文件：
@@ -54,13 +54,13 @@ $ beautywe page <name|path>
  1. 如果name是绝对路径（例如name: '/some/path/myPage'），则最终生成的目录是 `{project}/some/path/myPage`。
  1. 如果name只填写了路径（例如name: '/some/path/'），则当做 '/some/path' 处理。
 
-> 其中 `{defaultRoot}` 默认为 `app.json` 所在目录，可以通过 `.beautywerc` 中的 `defaultOutput` 来进行自定义配置。    
-> 其中 `{project}` 为项目目录，即 `package.json` 所在的目录 
+> 其中 `{project}` 为项目目录，即 `package.json` 所在的目录
+> 其中 `{defaultRoot}` 默认为 `app.json` 所在目录，可以通过 `.beautywerc` 中的 `defaultOutput` 来进行自定义。    
 
 
 **--subpkg**
 
-当创建的页面属于分包的话时，这样创建
+当创建的页面属于分包页面，这样创建：
 
 ```shell
 $ beautywe new page abc --subpkg goods
@@ -75,19 +75,17 @@ $ beautywe new page abc --subpkg goods
 
 **--write-route**
 
-如果需要创建路由的同时，自动写入路由到 `app.json` 文件，则可以开启：
+当创建路由的同时，需要自动写入路由到 `app.json` 文件：
 
 ```shell
-# 分包页面
-$ beautywe new page abc --subpkg goods --write-route
-
 # 主包页面
 $ beautywe new page abc --write-route
+
+# 分包页面
+$ beautywe new page abc --subpkg goods --write-route
 ```
 
 > 也可以通过 `.beautywerc` 中的 `writeRouteAfterCreated` 进行全局配置
-
-则会创建页面
 
 ### new plugin
 
