@@ -239,16 +239,16 @@ run 命令底层是调用了 gulp 任务。
             "source": ".templates/component",
 
             // 新文件输出的默认目录
-            "defaultOutput": "src/components"
+            "defaultOutput": "components"
         },
 
         // new page
         "page": {
-            // 模板文件虽在的目录
+            // 模板文件虽在的目录，相对于应用目录：`{project}/src`
             "source": ".templates/page",
 
-            // 新文件输出的默认目录
-            "defaultOutput": "src/pages"
+            // 新文件输出的默认目录，相对于应用目录：`{project}/src`
+            "defaultOutput": "pages"
         },
 
         // new plugin
@@ -256,8 +256,8 @@ run 命令底层是调用了 gulp 任务。
             // 模板文件虽在的目录
             "source": ".templates/plugin",
 
-            // 新文件输出的默认目录
-            "defaultOutput": "src/libs/plugins"
+            // 新文件输出的默认目录，相对于应用目录：`{project}/src`
+            "defaultOutput": "libs/plugins"
         }
     },
 
