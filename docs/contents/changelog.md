@@ -5,7 +5,7 @@
 该文档格式参考自 [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 并且该项目遵循 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [BeautyWe Project #001] - xxxx.xx.xx
+## [[BeautyWe Project #001] - xxxx.xx.xx](https://github.com/orgs/beautywe/projects/1)
 
 In process...    
 And see process of [BeautyWe Project #001](https://github.com/orgs/beautywe/projects/1)
