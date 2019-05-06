@@ -12,8 +12,6 @@ And see process of [BeautyWe Project #001](https://github.com/orgs/beautywe/proj
 
 ## [BeautyWe Project #000] - 2019.05.01
 
---------
-
 💥💥💥 The Bing Bang !!!     
 💥💥💥 The Bing Bang !!!     
 💥💥💥 The Bing Bang !!!    
