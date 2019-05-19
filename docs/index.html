@@ -2,57 +2,85 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>BeautyWe.js | 简单、组合、美丽</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
-  <link rel="icon" href="https://img.yzcdn.cn/public_files/2019/04/27/ac9a25307c5355c9b08d28a5f4202f96.png?imageView2/2/h/20">
-  
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139478920-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <meta charset="UTF-8">
+    <title>BeautyWe.js | 简单、组合、美丽</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+    <link rel="icon" href="https://img.yzcdn.cn/public_files/2019/04/27/ac9a25307c5355c9b08d28a5f4202f96.png?imageView2/2/h/20">
 
-    gtag('config', 'UA-139478920-1');
-  </script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139478920-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  <!-- Baidu Analytics -->
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?5c9f0408186a5b903fc531ee6671683c";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-139478920-1');
+    </script>
+
+    <!-- Baidu Analytics -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?5c9f0408186a5b903fc531ee6671683c";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
 </head>
 
 <body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      coverpage: true,
-      logo: 'https://img.yzcdn.cn/public_files/2019/04/27/ac9a25307c5355c9b08d28a5f4202f96.png?imageView2/2/h/88',
-      name: 'BeautyWe',
-      repo: 'https://github.com/beautywe/beautywe',
-      loadSidebar: true,
-      subMaxLevel: 2,
-      pagination: {
-        previousText: '上一章节',
-        nextText: '下一章节',
-        crossChapter: true
-      },
-      themeColor: '#E91E63'
-    }
-  </script>
-  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <div id="app"></div>
+    <script>
+        window.$docsify = {
+            coverpage: true,
+            logo: 'https://img.yzcdn.cn/public_files/2019/04/27/ac9a25307c5355c9b08d28a5f4202f96.png?imageView2/2/h/88',
+            name: 'BeautyWe',
+            repo: 'https://github.com/beautywe/beautywe',
+            loadSidebar: true,
+            subMaxLevel: 2,
+            pagination: {
+                previousText: '上一章节',
+                nextText: '下一章节',
+                crossChapter: true
+            },
+            themeColor: '#E91E63',
+        };
+    </script>
+    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <script>
+        window.$docsify.plugins.push(function remoteMD(hook) {
+            hook.beforeEach((content, next) => {
+                const reg = /\[remoteMarkdownUrl\]\((http|https:\/\/.+)\)/;
+                const result = content.match(reg);
+
+                if (result && result[1]) {
+                    const targetFile = result[1];
+                    return Promise
+                        .resolve()
+                        .then(() => fetch(targetFile))
+                        .then((response) => {
+                            if (!response.ok) {
+                                throw new Error('HTTP error, status = ' + response.status);
+                            }
+                            return response.text();
+                        })
+                        .then((data) => {
+                            next(content.replace(reg, `\n ${data} \n`));
+                        });
+                } else {
+                    next(content);
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

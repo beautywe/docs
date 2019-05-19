@@ -13,7 +13,7 @@
 
 - 配套设施
 
-    - [**BeautyWe CLI**](contents/cli.md)
+    - [**BeautyWe CLI**](remote/cli.md)
 
     - BeautyWe Framework
 
@@ -22,10 +22,10 @@
         
     - 推荐插件
 
-        - [增强存储：storage](https://github.com/beautywe/plugin-storage)
-        - [事件发布/订阅：event](https://github.com/beautywe/plugin-event)
-        - [状态机：status](https://github.com/beautywe/plugin-status)
-        - [数据列表：listpage](https://github.com/beautywe/plugin-listpage)
-        - [缓存策略：cache](https://github.com/beautywe/plugin-cache)
+        - [增强存储：storage](remote/plugin-storage.md)
+        - [事件发布/订阅：event](remote/plugin-event.md)
+        - [状态机：status](remote/plugin-status.md)
+        - [数据列表：listpage](remote/plugin-listpage.md)
+        - [缓存策略：cache](remote/plugin-cache.md)
 
 - [**CHANGELOG**](contents/changelog.md)

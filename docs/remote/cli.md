@@ -1,0 +1,1 @@
+[remoteMarkdownUrl](https://raw.githubusercontent.com/beautywe/cli/master/README.md)
