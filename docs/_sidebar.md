@@ -13,8 +13,6 @@
 
 - 配套设施
 
-    - [**BeautyWe CLI**](remote/cli.md)
-
     - BeautyWe Framework
 
         - [上手](contents/framework/introduce.md)
@@ -28,6 +26,8 @@
             - [Global Config](contents/concept/global-config.md)
             - [Example Pages](contents/concept/example-pages.md)
         - [项目结构](contents/framework/structure.md)
+
+    - [**BeautyWe CLI**](remote/cli.md)    
         
     - 推荐插件
 
