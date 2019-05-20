@@ -55,32 +55,7 @@
     </script>
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
     <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
-    <script>
-        window.$docsify.plugins.push(function remoteMD(hook) {
-            hook.beforeEach((content, next) => {
-                const reg = /\[remoteMarkdownUrl\]\((http|https:\/\/.+)\)/;
-                const result = content.match(reg);
-
-                if (result && result[1]) {
-                    const targetFile = result[1];
-                    return Promise
-                        .resolve()
-                        .then(() => fetch(targetFile))
-                        .then((response) => {
-                            if (!response.ok) {
-                                throw new Error('HTTP error, status = ' + response.status);
-                            }
-                            return response.text();
-                        })
-                        .then((data) => {
-                            next(content.replace(reg, `\n ${data} \n`));
-                        });
-                } else {
-                    next(content);
-                }
-            });
-        });
-    </script>
+    <script src="//unpkg.com/docsify-remote-markdown/dist/docsify-remote-markdown.min.js"></script>
 </body>
 
 </html>
