@@ -17,15 +17,16 @@
 
         - [上手](contents/framework/introduce.md)
         - 特性
-            - [快速创建](contents/concept/quick-create.md)
-            - [全局窗口](contents/concept/global-view.md)
-            - [多环境开发](contents/concept/multi-env.md)
-            - [Node.js Power](contents/concept/nodejs-power.md)
-            - [npm 支持](contents/concept/npm.md)
-            - [scss 与 wxss 的兼容](contents/concept/compatible-with-wxss.md)
-            - [Global Config](contents/concept/global-config.md)
-            - [Example Pages](contents/concept/example-pages.md)
-        - [项目结构](contents/framework/structure.md)
+            - [快速创建](contents/framework/concept/quick-create.md)
+            - [全局窗口](contents/framework/concept/global-view.md)
+            - [全局 Page , Component](contents/framework/concept/global-page-component.md)
+            - [多环境开发](contents/framework/concept/multi-env.md)
+            - [Node.js Power](contents/framework/concept/nodejs-power.md)
+            - [npm 支持](contents/framework/concept/npm.md)
+            - [scss 与 wxss 的兼容](contents/framework/concept/compatible-with-wxss.md)
+            - [Global Config](contents/framework/concept/global-config.md)
+            - [Example Pages](contents/framework/concept/example-pages.md)
+        - [项目结构](contents/framework/framework/structure.md)
 
     - [**BeautyWe CLI**](remote/cli.md)    
         
