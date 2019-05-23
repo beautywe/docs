@@ -37,5 +37,6 @@
         - [状态机：status](remote/plugin-status.md)
         - [数据列表：listpage](remote/plugin-listpage.md)
         - [缓存策略：cache](remote/plugin-cache.md)
+        - [日志：logger](remote/plugin-logger.md)
 
 - [**CHANGELOG**](contents/changelog.md)
