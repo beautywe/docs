@@ -1,41 +1,22 @@
 
-## Step1: 下载
-```
-npm i @beautywe/core
-```
+# Quick Start
 
-## Step2: 引入
+## 下载
 
-### Options 1: 拷贝 beautywe.min.js 到项目中
-
-你可以把 `node_modules/@beautywe/core/beautywe.min.js` 文件拷贝到你的项目中，然后像这样来使用 BeautyWe：
+把 [beautywe.min.js](https://unpkg.com/@beautywe/core@1.0.0/dist/beautywe.min.js) 文件拷贝到你的项目中，然后引入 BeautyWe：
 
 ```javascript
 import beautywe from './beautywe.min.js';
 ```
 
-### Options 2: 使用 BeautyWe Framework 的 NPM 功能
+## 使用
 
-在我们的 [**Beautywe Framework**](contents/framework/introduce.md) 中有集成 NPM 的解决方案，在该方案下，你可能会像这样引入 BeautyWe：
-
+**for app**
 ```javascript
-import { beautywe } from './npm/index';
-```
-
-### Options 3: 使用小程序自带的 NPM 功能
-
-从小程序基础库版本 2.2.1 或以上、及开发者工具 1.02.1808300 或以上开始，小程序支持使用 npm 安装第三方包。
-
-详情看微信小程序官方文档：[npm 支持](https://developers.weixin.qq.com/miniprogram/dev/devtools/npm.html?search-key=npm)
-
-
-## Step3: 改造 app.js
-
-```javascript
-import { beautywe } from './libs/npm/index';
+import { BtApp } from './beautywe.min.js';
 
 // 构建 BtApp 实例
-const myApp = new beautywe.BtApp({
+const myApp = new BtApp({
   onLaunch() {
     console.log('on app run');
   }
@@ -43,11 +24,27 @@ const myApp = new beautywe.BtApp({
 
 // 使用原生的 App 方法
 App(myApp);
-
 ```
 
-## Step4: 使用插件能力
+**for page**
+```javascript
+import { BtPage } from './beautywe.min.js';
 
+// 构建 BtPage 实例
+const myPage = new BtPage({
+  onLoad() {
+    console.log('on page run');
+  }
+});
+
+// 使用原生的 Page 方法
+Page(myPage);
+```
+
+## 使用插件
+
+
+### 外部插件
 ```javascript
 import event from '@beautywe/plugin-event';
 
@@ -59,5 +56,17 @@ myApp.event.on('hello', (msg) => console.log(msg));
 myApp.event.trigger('hello', 'I am jc');
 ```
 
-更多的插件看：[npm beautywe plugins](https://www.npmjs.com/search?q=keywords:beautywe-plugin)
+> 更多的第三方插件：[npm beautywe plugins](https://www.npmjs.com/search?q=keywords:beautywe-plugin)
+
+### 自定义插件
+```javascript
+myApp.use({
+  onLoad() {
+    console.log('my plugin run');
+  },
+});
+```
+
+> 如何编写插件：[插件 - 编写](contents/core/plugin/write.md)
+
 

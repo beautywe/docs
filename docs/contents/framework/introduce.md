@@ -1,21 +1,24 @@
 ## Intro
 
-BeautyWe Framework 提供了一套开箱即用的项目框架，他集成了这些功能：
+BeautyWe Framework 作为一套开箱即用的项目框架，他提供了这些功能：
 
-* beautywe
-* 使用 NPM 包解决方案
-* 全局窗口解决方案
-* 一套构建解决方案（js、scss、压缩、多环境等）
-* 全局范围的配置信息
-* 以及我们认为良好的项目规范（eslint，目录结构等）
+* BeautyWe Core
+* NPM 支持
+* 全局窗口
+* 全局 Page，Component
+* 全局配置文件
+* 多环境开发
+* Example Pages
+* 正常项目需要的标配：ES2015+,sass,uglify,watch 等
+* 以及我们认为良好的项目规范（eslint，commit log，目录结构等）
 
 ## Download
-```
+```shell
 npm i @beautywe/cli -g
 ```
 
 ## New Project
-```
+```shell
 $ beautywe new app
 
 > appName: my-app
@@ -31,7 +34,7 @@ $ beautywe new app
 
 回答几个问题之后，会自动生成项目：
 
-```
+```shell
 ./my-app
 ├── package.json
 ├── gulpfile.js    // 构建任务
@@ -41,17 +44,17 @@ $ beautywe new app
 
 ## Run
 安装依赖包
-```
+```shell
 cd ./my-app && npm i
 ```
 
 运行
-```
+```shell
 beautywe run dev
 ```
 
 用 「微信开发者工具」 打开目录文件夹：
-```
+```shell
 ${project_dir}/dist
 ```
 

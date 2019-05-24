@@ -1,19 +1,23 @@
 ## Introduction
 ----
 
-BeautyWe 是一套微信小程序的开发范式，它由几部分组成：
+BeautyWe 是一套专注于微信小程序的企业级开发范式，它的愿景是：
 
-* **核心类库** - [**@beautywe/core**](https://www.npmjs.com/package/@beautywe/core)    
-    对 App、Page 进行封装抽象，并且提供插件机制
+> 让企业级的微信小程序项目中的代码，更加简单、漂亮。
 
-* **插件生态** — [**@beautywe/plugin-xxx**](https://www.npmjs.com/search?q=keywords%3Abeautywe-plugin)    
-官方以插件的模式提供了各种解决方案，如「增强存储」、「事件发布订阅」、「状态机」、「Error」、「Logger」等。
+它由几部分组成：
 
-* **企业级框架** - [**@beautywe/framework**](https://www.npmjs.com/package/@beautywe/framework)    
-    基于 `beautywe/core`，提供一套开箱即用的项目框架，包含开发规范、构建任务、配置、NPM 等解决方案。
+* **核心** - [BeautyWe Core](https://www.npmjs.com/package/@beautywe/core)    
+    对 App、Page 进行抽象和包装，让其具有「可插件化」的能力。
 
-* **自动化工具** - [**@beautywe/cli**](https://www.npmjs.com/package/@beautywe/cli)    
-    提供「新建应用」、「新建页面」、「新建插件」、「项目构建」等任务的命令行工具，解放双手。
+* **插件** — [BeautyWe Plugins](https://www.npmjs.com/search?q=keywords%3Abeautywe-plugin)    
+    提供了常见的策略方案，如增强存储、发布/订阅、状态机、Logger、缓存策略等。
+
+* **框架** - [BeautyWe Framework](https://www.npmjs.com/package/@beautywe/framework)    
+    开箱即用的项目框架，集成了 `beautywe core` ，并且提供了如：全局窗口、开发规范、多环境开发、全局配置、NPM 等解决方案。
+
+* **自动化** - [BeautyWe Cli](https://www.npmjs.com/package/@beautywe/cli)    
+    提供快速创建应用、页面、插件，以及项目构建功能的命令行工具。
 
 ## Usage Example
 
