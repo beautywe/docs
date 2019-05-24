@@ -26,6 +26,7 @@
             - [scss 与 wxss 的兼容](contents/framework/concept/compatible-with-wxss.md)
             - [Global Config](contents/framework/concept/global-config.md)
             - [Example Pages](contents/framework/concept/example-pages.md)
+            - [UI 组件](contents/framework/concept/internal-components.md)
         - [项目结构](contents/framework/structure.md)
 
     - [**BeautyWe CLI**](remote/cli.md)    
