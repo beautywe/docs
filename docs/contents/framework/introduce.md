@@ -59,7 +59,7 @@ ${project_dir}/dist
 
 <div style="display: flex; justify-content:center; margin: 30px 0">
     <video width="375" height="667" controls autoplay>
-        <source src="../../videos/welcome.mov" type="video/mp4">
+        <source src="../../assets/videos/welcome.mov" type="video/mp4">
     </video>
 </div>
 

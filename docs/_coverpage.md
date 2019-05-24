@@ -1,6 +1,6 @@
 <!-- _coverpage.md -->
 
-<img alt="logo" width="700" src="./images/logo-V4.png">
+<img alt="logo" width="700" src="./assets/images/logo-V4.png">
 
 > 👨‍💻‍ Write beautiful code by the beautiful we!
 

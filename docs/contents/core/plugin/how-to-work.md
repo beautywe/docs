@@ -20,7 +20,7 @@ BeautyWe 会对宿主进行「可插件化」处理，经过这一步骤，才�
 
 宿主与插件的执行循序，简单来说就如下图：
 
-![可插件化简化版](../../../images/beautywe-pluggablify-simple.png)
+![可插件化简化版](../../../assets/images/beautywe-pluggablify-simple.png)
 
 以 `onShow` 来举例，
 - 当 `app.onShow` 执行，
@@ -32,7 +32,7 @@ BeautyWe 会对宿主进行「可插件化」处理，经过这一步骤，才�
 
 简单的理解的话，上图是没问题的，但是要深入理解「可插件化」，还需要继续剖析实现原理：
 
-![可插件化完全版](../../../images/beautywe-pluggablify-total.png)
+![可插件化完全版](../../../assets/images/beautywe-pluggablify-total.png)
 
 经过 `BtApp` 包装，所有的钩子函数 (native hook 和 handler)，都会有一个独立的执行队列，    
 这个队列首先会存储 `User App` 对应的钩子函数，然后每当有插件装载的时候，都会往执行队列 `push`。    

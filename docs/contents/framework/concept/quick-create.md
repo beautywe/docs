@@ -7,7 +7,7 @@
 
 ## 创建 Page
 
-![new page](../../../images/new-page.gif)
+![new page](../../../assets/svg/new-page.svg)
 
 功能：
 
@@ -45,7 +45,7 @@ beautywe new page --subpkg goods foods/cookie
 
 ## 创建 Component
 
-![new component](../../../images/new-component.gif)
+![new component](../../../assets/svg/new-component.svg)
 
 功能：
 
@@ -73,7 +73,7 @@ beautywe new component /dialog/red
 
 ## 创建 BeautyWe Plugin
 
-![new plugin](../../../images/new-plugin.gif)
+![new plugin](../../../assets/svg/new-plugin.svg)
 
 功能：
 
