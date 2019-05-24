@@ -29,7 +29,7 @@ Beautywe Framework 源码默认在两方面使用了多环境：
 | scripts | 编译JS文件 | √ | √ | √ |
 | sass | 编译scss文件 | √ | √ | √ |
 | npm | 编译npm文件 | √ | √ | √ |
-| nodeJsPower | 编译Node.js文件 | √ | √ | √ |
+| nodejs-power | 编译Node.js文件 | √ | √ | √ |
 | watch | 监听文件修改 | √ | | |
 | scripts-min | 压缩JS文件 |  |  | √ |
 | sass-min | 压缩scss文件 |  |  | √ |
