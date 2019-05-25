@@ -13,9 +13,11 @@
 
 - 配套设施
 
+    - [**BeautyWe CLI**](remote/cli.md)    
     - BeautyWe Framework
 
         - [上手](contents/framework/introduce.md)
+        - [项目结构](contents/framework/structure.md)
         - 特性
             - [快速创建](contents/framework/concept/quick-create.md)
             - [全局窗口](contents/framework/concept/global-view.md)
@@ -26,11 +28,7 @@
             - [scss 与 wxss 的兼容](contents/framework/concept/compatible-with-wxss.md)
             - [Global Config](contents/framework/concept/global-config.md)
             - [Example Pages](contents/framework/concept/example-pages.md)
-            - [规范](contents/framework/concept/specification.md)
-        - [项目结构](contents/framework/structure.md)
-
-    - [**BeautyWe CLI**](remote/cli.md)    
-        
+            - [规范](contents/framework/concept/specification.md)        
     - 推荐插件
 
         - [增强存储：storage](remote/plugin-storage.md)

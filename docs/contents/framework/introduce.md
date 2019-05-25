@@ -20,27 +20,13 @@ npm i @beautywe/cli -g
 ## New Project
 ```shell
 $ beautywe new app
-
-> appName: my-app
-> version: 0.0.1
-> appid: 12345678
-> 这样可以么:
-{
-    "appName": "my-app",
-    "version": "0.0.1",
-    "appid": "12345678"
-}
 ```
 
 回答几个问题之后，会自动生成项目：
 
-```shell
-./my-app
-├── package.json
-├── gulpfile.js    // 构建任务
-├── dist    // 生产代码
-└── src    // 源代码
-```
+![new app](../../../assets/svg/new-app.svg)
+
+> [详细的项目结构](/contents/framework/structure.md)
 
 ## Run
 安装依赖包
