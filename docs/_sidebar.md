@@ -28,7 +28,6 @@
             - [scss 与 wxss 的兼容](contents/framework/concept/compatible-with-wxss.md)
             - [Global Config](contents/framework/concept/global-config.md)
             - [Example Pages](contents/framework/concept/example-pages.md)
-            - [规范](contents/framework/concept/specification.md)        
     - 推荐插件
 
         - [增强存储：storage](remote/plugin-storage.md)

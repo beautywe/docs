@@ -23,6 +23,7 @@ const myPlugin = {
 
     // 原生生命周期钩子，会混合到 theHost.onShow
     nativeHook: {
+        // 支持异步，只要返回 Promise
         onShow() {
 
         },
@@ -30,6 +31,7 @@ const myPlugin = {
 
     // 视图层事件监听，会混合到 theHost.onClick
     handler: {
+        // 支持异步，只要返回 Promise
         onClick(event) {
             // 处理你的逻辑
         },

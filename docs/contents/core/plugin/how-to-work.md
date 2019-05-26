@@ -2,53 +2,54 @@
 
 ## 宿主的可插件化
 
-BeautyWe 会对宿主进行「可插件化」处理，经过这一步骤，才能把宿主的能力开放给插件。    
-从而才能通过插件实现复杂逻辑的封装。
+BeautyWe 会对宿主进行「可插件化」处理，经过这一步骤，原生的 data，生命周期，事件监听等能力得到开放。    
+插件可以通过开放的接口，实现复杂逻辑的封装。
 
-「可插件化」也是 BeautyWe 的核心逻辑，这里会一一讲解插件是怎么装载到宿主中去的。
+「可插件化」也是 BeautyWe 的核心功能，下面会一一讲解插件是怎么装载到宿主中去的。
 
-由于，`App` 和 `Page` 可插件化的思路是一致的，只有某些生命周期钩子不太一样。    
+> 由于，`App` 和 `Page` 可插件化的思路是一致的，只有某些生命周期钩子不太一样。    
 为了避免啰嗦，后续只用 `App` 来说明。
 
-当执行代码 `const app = new BtApp(userApp)` 的时候，「可插件化」就会开始工作，最后输出的 `app`，是已经过可插件化的了。
+当执行代码 `const app = new BtApp(userApp)` 的时候，输出的 `app`是已经过 `BtApp` 包装的实例。    
 如果你尝试打印 `app.onLaunch` 和 `userApp.onLaunch`，你会发现是不一样的函数。
 
-为了方便理解，对这过程中的抽象，我们约定一下理解：
-1. **Native App**: `App(app)` 生成的实例，是微信小程序原生的 App 实例
-2. **BtApp**: `BtApp(userApp)` 生成的实例，是 BeautyWe 包装的 BtApp 实例
-3. **User App**: `BtApp(userApp)` 中的 `userApp`，是我们实现具体业务代码的时候，由用户定义的 App
+为了方便理解，我们约定一下概念：
+1. **Native App**: `App(app)` 生成的实例，是微信小程序原生的 App 实例。
+2. **BtApp**: `BtApp(userApp)` 生成的实例，是 BeautyWe BtApp 包装的实例。
+3. **User App**: `BtApp(userApp)` 中的 `userApp`，是我们实现具体业务代码的时候，由用户定义。
+
+### 简单原理
 
 宿主与插件的执行循序，简单来说就如下图：
 
 ![可插件化简化版](../../../assets/images/beautywe-pluggablify-simple.png)
 
 以 `onShow` 来举例，
-- 当 `app.onShow` 执行，
+- 当 `nativeApp.onShow` 执行，
 - 会执行 `btApp.onShow`，
 - 然后执行 `userApp.onShow`，
 - 然后执行 `pluginA.onShow`，
 - 然后执行 `pluginB.onShow`，
 - 然后...
 
+
+### 深入原理
+
 简单的理解的话，上图是没问题的，但是要深入理解「可插件化」，还需要继续剖析实现原理：
 
 ![可插件化完全版](../../../assets/images/beautywe-pluggablify-total.png)
 
-经过 `BtApp` 包装，所有的钩子函数 (native hook 和 handler)，都会有一个独立的执行队列，    
-这个队列首先会存储 `User App` 对应的钩子函数，然后每当有插件装载的时候，都会往执行队列 `push`。    
-当 `Native App` 触发某个钩子函数，`BtApp` 就会以 Promise 链的形式按循序执行对应执行队列里面的函数。    
+工作原理是这样的：    
+1. 经过 `BtApp` 包装，所有的钩子函数 (native hook 和 handler)，都会有一个独立的执行队列，    
+2. 这个队列首先会存储 `User App` 对应的钩子函数，然后每当有插件装载的时候，都会往执行队列 `push`。    
+3. 当 `Native App` 触发某个钩子函数，`BtApp` 就会以 Promise 链的形式按循序执行对应执行队列里面的函数。    
+4. 特殊的，`onLaunch` 和 `onLoad` 的执行队列中，会在队列顶部插入一个初始化的任务（`initialize`），它会以同步的方式按循序执行 `Initialize Queue` 里面的函数，这正是插件生命周期函数中的 `plugin.initialize`。
 
-特殊的，`onLaunch` 和 `onLoad` 的执行队列中，会在队列顶部插入一个初始化的函数（`initialize`），这个函数会以同步的方式按循序执行 `Initialize Queue` 里面的函数。    
-而 `Initialize Queue` 存放的函数，正是插件生命周期函数中的 `plugin.initialize`。
-
-以上，就支持了：
-1. 宿主的可插件化
-2. 钩子函数支持异步阻塞
+> 由于钩子函数，是以 Promise 链执行的，所以支持了异步（例如 `onShow` 中返回一个 Promise），错误会流转到 nativeApp.onError 中。
 
 ## 插件的四种能力
 
-经过「可插件化」之后，[宿主](contents/core/the-host.md) 的一些能力被开放了出来。    
-插件的能力可以分成四类：
+经过「可插件化」之后，[宿主](contents/core/the-host.md) 的一些能力被开放了出来，可以分成四类：
 
 1. 扩展宿主数据：Data，对应 `plugin.data`
 2. 扩展宿主原生钩子：Native Hook，对应 `plugin.nativeHook`
@@ -295,22 +296,31 @@ custom method 混合的大概过程如下：
 1. 装载 Attach
 2. 初始化 Initialize
 
-至于卸载，则是跟着宿主被销毁了（`App.onHide`, `Page.onHide`, `Page.onUnload`）
+至于卸载，则是跟着宿主被销毁（`App.onHide`, `Page.onHide`, `Page.onUnload`）
 
-### 装载
+### 装载 Attach
 
 在执行 `theHost.use(plugin)` 的时候，触发装载动作，该动作有两个钩子函数：
 * `beforeAttach({ theHost })`
 * `attached({ theHost })`
 
-其中 `theHost` 是由 `Page()` 或 `App()` 创建的原生实例。
-函数中执行 `throw`，会阻断执行。
+装载动作做的事情：
 
-### 初始化
+1. 此时未执行 `Page()/App()`，原生的示例未被创建。    
+2. 参数 `theHost` 是由 `BtPage/BtApp` 包装的实例。
+3. 只混合 `data`, `nativHooks`, `handlers`。由于 `customMethod` 需要获得原生实例，所以此时仍未初始化，还不能被读取。
+4. 函数中执行 `throw`，会阻断执行。
 
-根据上面 [宿主的可插件化](#宿主的可插件化) 原理，插件的初始化是在原生宿主实例载入的时候(`App.onLaunch`, `Page.onLoad`)被执行的。
+### 初始化 Initialize
+
+根据上面 [宿主的可插件化](#宿主的可插件化) 原理，插件的初始化是在原生宿主实例载入的时候(`App.onLaunch`, `Page.onLoad`)被执行。
 该过程的钩子函数：
-* initialize({ theHost }) 
+* `initialize({ theHost })`
 
-该初始化钩子函数会被 push 到 `Initialize Queue` 中，    
-函数中执行 `throw`, 会阻断执行。
+初始化做的事情：
+
+1. 初始化钩子函数会被 push 到 `Initialize Queue` 中，当 `onLaunch/onLoad` 时被执行。
+1. 此时已执行 `Page()/App()`
+1. `customMethod` 已初始化，能被读取到。
+1. 参数 `theHost` 是由 `Page()/App()` 包装的实例。
+1. 函数中执行 `throw`, 会阻断执行。
