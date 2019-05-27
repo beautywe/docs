@@ -43,14 +43,14 @@ const globalView = getGlobalView();
 globalView.showLoading();
 ```
 
-## Page quick created
+## Quickly Created
 
 我很懒，每创建一个页面写一句 `<global-view id="global-view"> ... </global-view>` ，都会觉得很繁琐。
 
 所以，可以通过 [BeautyWe Cli 提供的快速创建功能](/contents/framework/concept/quick-create.md)，快速创建页面：
 
 ```shell
-beautywe new page helloworld
+$ beautywe new page helloworld
 ```
 
 其中生成的页面，就已经引入了 `<global-view>` 代码了
