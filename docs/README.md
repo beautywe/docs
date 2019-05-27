@@ -22,8 +22,8 @@ BeautyWe 是一套专注于微信小程序的企业级开发范式，它的愿�
 ## Usage Example
 
 
-```
-npm i @beautywe/core @beautywe/plugin-event
+```shell
+$ npm i @beautywe/core @beautywe/plugin-event
 ```
 
 ```javascript

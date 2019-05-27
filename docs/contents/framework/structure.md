@@ -1,6 +1,6 @@
 # App Structure
 
-```
+```json
 ./
 ├── dist  // 通过构建的代码，真正在微信小程序环境运行的代码
 ├── gulpfile.js  // 构建任务
