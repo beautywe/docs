@@ -19,6 +19,7 @@
         - [上手](contents/framework/introduce.md)
         - [项目结构](contents/framework/structure.md)
         - 特性
+            - [规范](contents/framework/concept/specification.md)
             - [快速创建](contents/framework/concept/quick-create.md)
             - [全局窗口](contents/framework/concept/global-view.md)
             - [全局 Page , Component](contents/framework/concept/global-page-component.md)
