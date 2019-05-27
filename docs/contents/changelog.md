@@ -6,6 +6,18 @@
 并且该项目遵循 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 -----
+## Release #002 - 2019.05.27
+> For details:  [Release #002](https://github.com/orgs/beautywe/projects/3)
+
+### Added
+
+* 新增 eslint 校验，[详情](/contents/framework/concept/specification.md#js-代码)
+* 新增 git commit log 校验，[详情](/contents/framework/concept/specification.md#git-commit-log)
+
+### Release Versions
+- [@beautywe/framework v1.0.4](https://www.npmjs.com/package/@beautywe/framework/v/1.0.4)
+
+-----
 ## Release #001 - 2019.05.26
 > For details:  [Release #001](https://github.com/orgs/beautywe/projects/1)
 
