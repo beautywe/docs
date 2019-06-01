@@ -59,7 +59,7 @@ myApp.event.trigger('hello', 'I am jc');
 # Appreciates
 
 <p align="left">
-    <img style="width: 350px" src="./assets/images/appreciates.jpg">
+    <img style="width: 310px" src="./assets/images/appreciates.jpg">
 </p>
 
 # License
