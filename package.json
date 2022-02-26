@@ -1,0 +1,26 @@
+{
+  "name": "@jerryc/docs",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">   <img src=\"https://img.yzcdn.cn/public_files/2019/04/27/49f46c53afd62f9cebcbcf13b091acbb.png?imageView2/2/h/200\"> </p>",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "serve": "./node_modules/.bin/docsify serve docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beautywe/docs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beautywe/docs/issues"
+  },
+  "homepage": "https://github.com/beautywe/docs#readme",
+  "devDependencies": {
+    "docsify-cli": "^4.4.3"
+  }
+}
